@@ -18,7 +18,8 @@ const TravelCard = () => {
   
   return (
     <div className="travel-card">
-      {places.map((place, index) => <p key={index}>{place.city} {place.country} <br/> <img src={place.img} alt="travel pic"/> <br/> {place.description}</p>)}
+      {places.map((place, index) => <p key={index}>{place.city} {place.country} <br/> <img src={place.image} alt="travel pic"/> <br/> {place.description}</p>
+      )}
       <button onClick={handleClick}>Like {count}</button>
       <div className="checkbox">
         <input type="checkbox"></input>
