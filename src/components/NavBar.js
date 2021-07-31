@@ -1,13 +1,13 @@
-//This is where the menu will live.
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {
   return (
     <div>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/travel-list">Travel List</NavLink>
-      <NavLink to="/new">Add A Location</NavLink>
+      <NavLink className="navbarlink" to="/">Home</NavLink>
+      <NavLink className="navbarlink" to="/travel-list">Travel List</NavLink>
+      <NavLink className="navbarlink" to="/new">Add A Location</NavLink>
+      <NavLink className="navbarlink" to="/been-there">Been There</NavLink>
     </div>
   )
 }
