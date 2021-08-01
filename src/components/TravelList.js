@@ -23,11 +23,11 @@ const TravelList = () => {
   return (
     <div>
       <h3>Travel List</h3>
-      <Search search={search} onSearchChange={onSearchChange}/>
+      <Search search={search} onSearchChange={onSearchChange} />
       <h4>Where will you go next?</h4>
-      {/* <h4>Have friends vote on your next destination!</h4> */}
-      {/* <p>When you've made the trip, check it off from your list. You can revisit your destinations anytime from your <strong>Been There</strong> list.</p> */}
-      {filteredPlaces.map((place) => <TravelCard key={place.id} id={place.id} place={place} places={places} setPlaces={setPlaces}/>)}
+      {/* future goal - <h4>Have friends vote on your next destination!</h4> */}
+      {/* future goal - <p>When you've made the trip, check it off from your list. You can revisit your destinations anytime from your <strong>Been There</strong> list.</p> */}
+      {filteredPlaces.map((place) => <TravelCard key={place.id} id={place.id} place={place} places={places} setPlaces={setPlaces} />)}
     </div>
   )
 }

@@ -9,7 +9,7 @@ const TravelCard = ({ place, id, places, setPlaces }) => {
   }
 
   function deletePost() {
-    fetch(" http://localhost:3010/places/" +id, {
+    fetch(" http://localhost:3010/places/" + id, {
       method: "DELETE",
       headers: {
         "Accept": "application/json",
@@ -19,7 +19,6 @@ const TravelCard = ({ place, id, places, setPlaces }) => {
     const afterDeleteList = places.filter((element) => element.id !== id)
     setPlaces(afterDeleteList)
   }
-
 
   return (
 

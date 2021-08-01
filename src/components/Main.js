@@ -4,7 +4,7 @@ import Home from './Home'
 import TravelList from './TravelList'
 import TravelForm from './TravelForm'
 import NavBar from './NavBar'
-import BeenThereList from './BeenThereList'
+// import BeenThereList from './BeenThereList'
 
 
 const Main = () => {
@@ -24,9 +24,9 @@ const Main = () => {
           <Route exact path="/travel-list">
             <TravelList />
           </Route>
-          <Route exact path="/been-there">
+          {/* future goal <Route exact path="/been-there">
             <BeenThereList />
-          </Route>
+          </Route> */}
         </Switch>
       </Router>
     </div>
