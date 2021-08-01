@@ -1,14 +1,16 @@
 import React from 'react'
 
-const Search = ({search, handleSearchChange}) => {
+const Search = ({ search, onSearchChange }) => {
 
-
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
 
   return (
     <div>
-       <input type="text" id="search" placeholder="Search for a country..." value={search} onChange={handleSearchChange}/>
-      <button>Search</button>
-      
+      <form className="searchbar" onSubmit={handleSubmit}>
+        <input type="text" id="search" placeholder="Search for a country..." value={search} onChange={e => onSearchChange(e.target.value)} /> 
+      </form>
     </div>
   )
 }
