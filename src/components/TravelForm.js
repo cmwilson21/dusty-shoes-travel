@@ -5,7 +5,8 @@ const TravelForm = ({ history }) => {
     city: "",
     country: "",
     image: "",
-    description: ""
+    description: "",
+    votes: 0
   });
 
 
