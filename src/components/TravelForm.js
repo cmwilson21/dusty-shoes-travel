@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import {useHistory} from 'react-router-dom'
 
-const TravelForm = ({ history }) => {
+const TravelForm = () => {
   const [form, setForm] = useState({
     city: "",
     country: "",
@@ -8,6 +9,7 @@ const TravelForm = ({ history }) => {
     description: ""
   });
 
+  const history = useHistory()
 
   const handleChange = e => {
     setForm({
@@ -15,6 +17,7 @@ const TravelForm = ({ history }) => {
       [e.target.name]: e.target.value
     })
   }
+
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -27,7 +30,7 @@ const TravelForm = ({ history }) => {
       body: JSON.stringify(form)
     })
       .then(resp => resp.json())
-      .then(() => history.push("/travel-list"))
+      .then(() => history.push('/travel-list'))
   }
 
   return (
